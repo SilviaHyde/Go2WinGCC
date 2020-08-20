@@ -48,3 +48,8 @@ This will produce a `c.exe`, which is portable along with `aw.dll` .
 ```
 gcc -pthread -o c.exe client.c -L. -law
 ```
+
+**Or we can cross-compile it on Linux like:**
+```
+x86_64-w64-mingw32-gcc -pthread -o bin/client.exe client.c -Ibin -Lbin -law
+```
